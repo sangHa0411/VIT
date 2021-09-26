@@ -25,11 +25,13 @@
   7. Class size : 1000
 
 ## Training 
-  1. Optimizer : Adam (beta1=0.9, beta2=0.99, weight decay = 1e-4)
-  2. Scheudler : linear warmup and decay
+  1. Optimizer : Adam
+      * beta1=0.9, beta2=0.99
+      * weight decay = 1e-4
+  3. Scheudler : linear warmup and decay
       * warmup steps = 2000
-  3. Epochs : 100
-  4. Batch size : 256
+  4. Epochs : 100
+  5. Batch size : 256
 
 ## Data 
   1. ImageNet
