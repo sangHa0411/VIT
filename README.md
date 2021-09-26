@@ -24,6 +24,17 @@
   6. Hidden Size : 3072
   7. Class size : 1000
 
+## Image Augmentation
+  1. Train
+      * CutMix
+      * Resize (256)
+      * RandomHorizontalFlip(0.5)
+      * RandomCrop (224)
+      * Normalize
+  3. Validation
+      * Resize (224)
+      * Normalize
+
 ## Training 
   1. Optimizer : Adam
       * beta1=0.9, beta2=0.99
