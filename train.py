@@ -151,7 +151,7 @@ def train(args) :
                 'model_state_dict' : model.state_dict() , 
                 'loss' : loss_eval.item() , 
                 'acc' : acc_eval.item()} , 
-                os.path.join(args.model_dir, 'densenet169_imagenet.pt'))        
+                os.path.join(args.model_dir, 'vit16_base_imagenet.pt'))        
             stop_count = 0 
         else :
             stop_count += 1
@@ -179,7 +179,7 @@ if __name__ == '__main__' :
     parser.add_argument('--norm_rate', type=float, default=1e-6, help='normalization rate of transformer (default: 1e-6)')
     # Training argumnet
     parser.add_argument('--epochs', type=int, default=100, help='number of epochs to train (default: 100)')
-    parser.add_argument('--wardmup_steps', type=int, default=2000, help='warmup steps of training (default: 2000)')
+    parser.add_argument('--wardmup_steps', type=int, default=4000, help='warmup steps of training (default: 4000)')
     parser.add_argument('--init_lr', type=float, default=1e-2, help='initial learning rate')
     parser.add_argument('--batch_size', type=int, default=256, help='input batch size for training (default: 256)')
     # Container argument
