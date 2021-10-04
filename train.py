@@ -178,7 +178,7 @@ if __name__ == '__main__' :
     parser.add_argument('--drop_rate', type=float, default=1e-1, help='dropout rate of transformer (default: 1e-1)')
     parser.add_argument('--norm_rate', type=float, default=1e-6, help='normalization rate of transformer (default: 1e-6)')
     # Training argumnet
-    parser.add_argument('--epochs', type=int, default=100, help='number of epochs to train (default: 100)')
+    parser.add_argument('--epochs', type=int, default=20, help='number of epochs to train (default: 100)')
     parser.add_argument('--warmup_steps', type=int, default=4000, help='warmup steps of training (default: 4000)')
     parser.add_argument('--init_lr', type=float, default=1e-2, help='initial learning rate')
     parser.add_argument('--batch_size', type=int, default=256, help='input batch size for training (default: 256)')
